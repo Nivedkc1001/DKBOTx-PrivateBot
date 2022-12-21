@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dk_botx')
+                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/CINEMALOKAMM')
             ],
             [
                 InlineKeyboardButton('ʜᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -42,6 +42,8 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
+            InlineKeyboardButton('ᴍᴀɪɴ ɢʀᴏᴜᴩ', url='https://t.me/+SgufVcGFQsBjYmNl')
+            ],[
         
             InlineKeyboardButton('😊 About', callback_data='about'),
             InlineKeyboardButton('🔒 Close', callback_data='close_data')
@@ -82,6 +84,8 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
+            InlineKeyboardButton('ᴍᴀɪɴ ɢʀᴏᴜᴩ', url='https://t.me/+SgufVcGFQsBjYmNl')
+            ],[
             
             InlineKeyboardButton('😊 About', callback_data='about'),
             InlineKeyboardButton('🔒 Close', callback_data='close_data')
